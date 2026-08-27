@@ -8,6 +8,8 @@ VENV_PYTHON_LINUX = VENV_DIR / "bin" / "python"
 
 
 def install():
+    print("Attempting to remove old venv folder (Not needed)")
+    subprocess.run(["rm", "./venv", "-rf"])
     print("Attempting to create venv folder")
     try:
         subprocess.run(["py", "-m", "venv", "venv"])
