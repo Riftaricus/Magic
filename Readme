@@ -1,5 +1,7 @@
-Execute the command
+Depending whether you're using Windows or Linux, open the file to run the code.
+output/code/output_linux/main
+output/code/output_windows/main.exe
 
-`python3 main.py`
-
-to start the program. Then go into the output folder, and open the JSON or the csv file to get the updated data.
+Output appears in
+output/data.csv &
+output/data.json
