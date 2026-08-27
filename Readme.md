@@ -1,4 +1,4 @@
-#Magic Skills
+# Magic Skills
 
 Magic skills is a project where I needed to obtain data from a magic the gathering API and turn it into a CSV file
 
