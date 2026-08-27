@@ -1,4 +1,4 @@
-import os, requests
+import os, requests, subprocess
 from dotenv import load_dotenv
 import pandas as pd
 

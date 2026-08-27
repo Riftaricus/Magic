@@ -1,11 +1,48 @@
-Depending whether you're using Windows or Linux, open the file to run the code.
-output/code/output_linux/main
-output/code/output_windows/main.exe
+# Magic Skills
 
-What you could also do is execute the following command
-`python3 main.py`
-which would directly run the python
+Magic skills is a project where I needed to obtain data from a magic the gathering API and turn it into a CSV file
 
-Output appears in
+## Used API:
+https://scryfall.com/
+
+## Used Language
+
+Python
+
+## Libraries
+
+Pandas
+Dotenv
+os
+subprocess
+
+## Requirements
+
+All it needs is to have Python installed
+
+## Install & Run
+
+To use & install the code, run the installer.py using:
+'python3 installer.py' or 'py installer.py'
+depending on your installation
+
+It will automatically install and run the code
+
+If you wish to start it without installing, you can do 
+'python3 main.py' or 'py main.py'
+
+## Output
+
+The output appears in
 output/data.csv &
 output/data.json
+
+The Terminal prints out what it's currently working on and when something breaks
+
+## Sorting
+
+The sets are sorted by release date
+
+## Sources
+
+https://scryfall.com/
