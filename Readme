@@ -2,6 +2,10 @@ Depending whether you're using Windows or Linux, open the file to run the code.
 output/code/output_linux/main
 output/code/output_windows/main.exe
 
+What you could also do is execute the following command
+`python3 main.py`
+which would directly run the python
+
 Output appears in
 output/data.csv &
 output/data.json
