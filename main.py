@@ -35,13 +35,13 @@ if __name__ == "__main__":
     data = get_data(BASE_API_URL, "/sets")
     if (data == None):
         print("An error occured getting the data from the API...")
-        exit
+        exit(1)
     print("Succesfully requested data")
     print("Filtering Data")
     processed_data = []
 
     for set in data['data']:
-        if "un" != set['name'][:2].lower():
+        if set['set_type'] != "token" and set['set_type'] != "promo" and set['set_type'] != "funny" and set['set_type'] != "memorabilia":
             processed_data.append({
                 "code": set['code'],
                 "name": set['name'],
