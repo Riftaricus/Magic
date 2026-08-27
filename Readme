@@ -1,3 +1,5 @@
 Execute the command
 
 `python3 main.py`
+
+to start the program. Then go into the output folder, and open the JSON or the csv file to get the updated data.
