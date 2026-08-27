@@ -58,3 +58,4 @@ if __name__ == "__main__":
     worked = transfer_to_csv(data)
     print(("Succesfully" if worked == True else "Incorrectly") + " saved CSV data to output/data.csv")
 
+    input("Press Enter to continue.")
