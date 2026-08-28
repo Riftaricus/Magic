@@ -8,8 +8,12 @@ VENV_PYTHON_LINUX = VENV_DIR / "bin" / "python"
 
 
 def install():
-    print("Attempting to remove old venv folder (Not needed)")
-    subprocess.run(["rm", "./venv", "-rf"])
+    print("Attempting to update git repository")
+    try:
+        subprocess.run(["git", "pull"])
+    except Exception:
+        pass
+
     print("Attempting to create venv folder")
     try:
         subprocess.run(["py", "-m", "venv", "venv"])
