@@ -87,7 +87,7 @@ def save_json(data: list[dict], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with path.open("w", encoding="utf-8") as file:
-        json.dump(data, file, indent=4, ensure_ascii=False)
+        json.dump(data, file, indent=1, ensure_ascii=False)
 
     log(f"Dumped data into '{path}'", colorama.Fore.GREEN)
 
