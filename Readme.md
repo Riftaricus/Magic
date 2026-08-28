@@ -27,13 +27,12 @@ All it needs is to have Python installed. Also for project auto-updating, it req
 ## Install & Run
 
 To use & install the code, run the installer.py using:
-'python3 installer.py' or 'py installer.py'
+'python3 installer.py run' or 'py installer.py run'
 depending on your installation
 
 It will automatically install and run the code
 
-If you wish to start it without installing, you can do 
-'python3 main.py' or 'py main.py'
+If you want to install without running, do 'python3 installer.py' or 'py installer.py'
 
 ## Output
 

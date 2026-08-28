@@ -14,7 +14,8 @@ HEADERS = {
     "Accept": "application/json;q=0.9,*/*;q=0.8",
 }
 
-OUTPUT_DIR = Path("output")
+BASE_DIR = Path(__file__).parent
+OUTPUT_DIR = BASE_DIR / "output"
 JSON_FILE = OUTPUT_DIR / "data.json"
 CSV_FILE = OUTPUT_DIR / "data.csv"
 
