@@ -47,12 +47,21 @@ def fetch_sets() -> list[dict]:
     return response.json()["data"]
 
 def process_sets(sets: list[dict]) -> list[dict]:
-    log("Filtering data on set_type", colorama.Fore.GREEN)
+    log("Filtering data on set_type & release date", colorama.Fore.GREEN)
+
+    now = datetime.datetime.now()
 
     processed_sets = []
 
     for index, set_data in enumerate(sets, start=1):
         if set_data["set_type"] in EXCLUDED_SET_TYPES:
+            continue
+
+        format = '%Y-%m-%d'
+
+        release_date = datetime.datetime.strptime(set_data['released_at'], format)
+
+        if release_date > now:
             continue
 
         processed_sets.append(
