@@ -54,25 +54,28 @@ def process_sets(sets: list[dict]) -> list[dict]:
     processed_sets = []
 
     for index, set_data in enumerate(sets, start=1):
+        append = True
         if set_data["set_type"] in EXCLUDED_SET_TYPES:
-            continue
+            append = False
 
         format = '%Y-%m-%d'
 
         release_date = datetime.datetime.strptime(set_data['released_at'], format)
 
         if release_date > now:
-            continue
+            append = False
 
-        processed_sets.append(
-            {
-                "code": set_data["code"],
-                "name": set_data["name"],
-                "released": set_data["released_at"],
-                "api_url": set_data["uri"],
-                "icon_url": set_data["icon_svg_uri"],
-            }
-        )
+        if append:
+
+            processed_sets.append(
+                {
+                    "code": set_data["code"],
+                    "name": set_data["name"],
+                    "released": set_data["released_at"],
+                    "api_url": set_data["uri"],
+                    "icon_url": set_data["icon_svg_uri"],
+                }
+            )
 
         if index % 100 == 0:
             log(
