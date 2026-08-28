@@ -22,7 +22,7 @@ Pathlib
 
 ## Requirements
 
-All it needs is to have Python installed
+All it needs is to have Python installed. Also for project auto-updating, it requires git.
 
 ## Install & Run
 
