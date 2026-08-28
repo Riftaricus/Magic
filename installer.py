@@ -12,7 +12,7 @@ def install():
     try:
         subprocess.run(["git", "pull"])
     except Exception:
-        pass
+        print("Failed to update git repository, skipping step")
 
     print("Attempting to create venv folder")
     try:
